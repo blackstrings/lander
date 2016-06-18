@@ -3,7 +3,7 @@ using System.Collections;
 
 public class MovementController : MonoBehaviour {
 
-    GameObject activeGO;
+    public GameObject activeGO;
 
     void Start() {
         setActiveGO();
@@ -11,7 +11,10 @@ public class MovementController : MonoBehaviour {
 
     //not needed with singleton
     private void setActiveGO() {
-        activeGO = TempSingleton.Instance.activeGO = GameObject.Find("Cube_pf");
+        //if not set in the GUI dynamically set it
+        if (!activeGO) {
+            activeGO = TempSingleton.Instance.activeGO = GameObject.Find("pf_cube");
+        }
     }
 
     // Use this for initialization
