@@ -1,5 +1,8 @@
-﻿public interface IKillable {
+﻿
+namespace LAO.Generic.Destroy {
+    public interface IKillable {
 
-    void kill();
+        void kill();
 
+    }
 }
