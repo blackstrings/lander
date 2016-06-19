@@ -2,7 +2,10 @@
 using System.Collections;
 using LAO.Generic.Destroy;
 
-public class CollisionDestroyerByInterface : MonoBehaviour {
+/// <summary>
+/// Whatever touches this gameobject will be destroyed
+/// </summary>
+public class DestroyerCollisioByInterface : MonoBehaviour {
 
     /// <summary>
     /// Triggers require the object to be a convex mesh and isTrigger is checked
