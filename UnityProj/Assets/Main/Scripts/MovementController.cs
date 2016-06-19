@@ -23,6 +23,8 @@ public class MovementController : MonoBehaviour {
     }
 
     public void reset() {
-        TempSingleton.Instance.activeGO.GetComponent<ResetPosition>().init();
+        if (activeGO) {
+            activeGO.GetComponent<ResetPosition>().init();
+        }
     }
 }
