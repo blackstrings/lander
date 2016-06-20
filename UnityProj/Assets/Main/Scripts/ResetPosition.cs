@@ -37,6 +37,6 @@ public class ResetPosition : MonoBehaviour {
         go.transform.rotation = Quaternion.identity;
         go.transform.position = origPos;
 
-        Debug.Log("Score: " + TempSingleton.Instance.score);
+        //Debug.Log("Score: " + TempSingleton.Instance.score);
     }
 }

@@ -13,6 +13,7 @@ public class TempSingleton : Singleton<TempSingleton> {
 
     void Start() {
         scoreDisplay = GameObject.Find("txtScore");
+        activeGO = GameObject.FindGameObjectWithTag("Player");
     }
 
 	public GameObject getActiveGO() {
